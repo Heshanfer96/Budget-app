@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(0, 0, 126);
+    background-image: url(tablet-bar-charts-abstract-financial-260nw-289774613.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    margin-top: 50px;
+    background-color: blue;
+    min-height: 400px;
+    max-height: auto;
+    width: 50%;
+    border-radius: 20px;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: whitesmoke;
+
+}
+
+div h2, p{
+    margin: 20px;
+    color: whitesmoke;
+
+}
+
+.show-line{
+    display: flex;
+    margin: 20px 30px;
+    justify-content: space-around;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.body-inputs{
+    background-color: whitesmoke;
+    min-height: 100px;
+    max-height: auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.body-inputs h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.toggle{
+    display: flex;
+    justify-content:space-evenly ;
+}
+
+.active{
+    opacity: 1 !important;
+    font-weight: 1000;
+}
+
+.hide{
+    display: none;
+}
+
+.input-box{
+    /* display:flex ; */
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    margin-top: 100px;
+    border-radius: 10px;
+    margin-bottom: 0;  
+}
+
+.table-padding{
+    padding: 10px;
+}
+
+li div{
+    display: inline;
+}

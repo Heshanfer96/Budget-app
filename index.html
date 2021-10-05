@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget web applicaion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="bujet.css">
+    <script defer src="chart.js"></script>
+    <script defer src="bujet.js"></script>
+   
+</head>
+<body>
+
+    <div class="container">
+        <h1> <span style="color: rgb(7, 25, 85);"><i class="far fa-credit-card"></i></span>  Budget <b>webapp</b></h1>
+        <div>
+            <h2> Balane  <i class="fas fa-balance-scale"></i></h2>
+            <p id="balance"></p>
+        </div>
+
+        <div class="show-line">
+            <div >
+                <h5><span style="color: black;"><i class="fas fa-hand-holding-usd"></i></span> income</h5><br>
+                <p id="income-display"></p>
+            </div>
+            <div>
+                <p id="chart"></p>
+            </div>
+            <div>
+                <h5>outcome <span style="color: black;"><i class="fas fa-money-bill-alt"></i></span></h5><br>
+                <p id="outcome-display"></p>
+            </div>
+        </div>
+
+        <div class="body-inputs">
+            <h3>Dashboard</h3>
+            <div class="toggle">
+                <div class="tab1 active">Expenses</div>
+                <div class="tab2 ">Incomes</div>
+                <div class="tab3">All</div>
+            </div>
+
+            <div>
+                <div class="expences ">
+                    <div id="expence-data">
+                        
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="add title" id="expenceTitle">
+                        <input type="text" placeholder="add amount in RS" id="expenceAmount">
+                        <button class="btn btn-primary " id="expanceBtn">+</button>
+                    </div> 
+                </div>
+
+                <div class="income hide">
+                    <div id="income-data" class="textbox">
+                    
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="add title" id="incomeTitle">
+                        <input type="text" placeholder="add amount in RS" id="incomeAmount">
+                        <button class="btn btn-primary " id="incomeBtn" >+</button>
+                    </div>
+                </div>
+
+                <div class="all hide">
+                    <div id="All-dat">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
